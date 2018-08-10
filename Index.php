@@ -216,7 +216,7 @@ class Index{
 
     public function clickResImgTxt($postObj,$key,$arr)
     {
-        if(strtolower($postObj->MsgType) == 'click'){
+        if(strtolower($postObj->Event) == 'click'){
             if(strtolower($postObj->EventKey == $key)){
                 $this->imgTxtMessage($postObj, $arr);
             }
